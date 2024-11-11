@@ -14,51 +14,42 @@
             margin: 0;
             padding: 0;
         }
-
         .header {
             padding-top: 20%;
             text-align: center;
             margin-bottom: 2em;
         }
-
         h1 {
             font-size: 3em;
             margin-bottom: 0.2em;
         }
-
         p {
             font-size: 1.5em;
         }
-
         .project-section {
             background: rgba(0, 0, 0, 0.8);
             padding: 2em;
             margin-top: 2em;
         }
-
         .project-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-
         .video-container {
             max-width: 800px;
             margin: 2em auto;
         }
-
         video {
             width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
-
         .project-description {
             text-align: left;
             max-width: 800px;
             margin: 2em auto;
         }
-
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
@@ -66,12 +57,31 @@
             justify-content: center;
             margin: 1em 0;
         }
-
         .tag {
             background: rgba(255, 255, 255, 0.1);
             padding: 0.5em 1em;
             border-radius: 20px;
             font-size: 0.9em;
+        }
+        /* New CSS for screenshots */
+        .screenshots-container {
+            max-width: 800px;
+            margin: 2em auto;
+        }
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 2em 0;
+        }
+        .screenshot {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        .screenshot:hover {
+            transform: scale(1.02);
         }
     </style>
 </head>
@@ -92,6 +102,12 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+            <div class="screenshots-container">
+    <div class="screenshot-grid">
+        <img src="images/eerie vibes-1.jpeg" alt="Eerie Vibes Screenshot 1" class="screenshot">
+        <img src="images/eerie vibes-2.jpeg" alt="Eerie Vibes Screenshot 2" class="screenshot">
+    </div>
+</div>
 
             <div class="project-description">
                 <p>eerie vibes began as an experiment in prompt engineering and AI collaboration. Using GPT-4, I created an interactive art generator without writing any code directly—instead, relying entirely on prompt engineering to develop a program that generates eerie, algorithmic art. My only instruction on aesthetic was "eerie vibes."</p>
